@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R369</id>
+	<name>The first Run 8/6/2022</name>
+	<description></description>
+	<config></config>
+	<createdon>2022-08-06T09:26:41Z</createdon>
+		<completed>false</completed>
+		<milestone>Milestone 1.0_Julia S</milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>1</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Shishkin</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>NoFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Zasyadko</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Zasyadko. Функциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Zasyadko. Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Zasyadko. Тесты производительности</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Удалить</name>
+		<description>Тестируем интерфейс (внешний вид) и функционал (работоспособность) программы.</description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Микеладзе</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функциональные проверки hardload.exe</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Проверка интерфейса hardload.exe</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Проверка Производительности</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Dyakovskiy</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>NoFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Astafyev Andrey_cases</name>
+		<description>Andrey Astafyev cases for Hardload</description>
+										<sections>
+		<section>
+		<name>Function Tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>non function tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>performance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Seriukova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Perf tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Func tests</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T53388</id>
+				<title>Copy File</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Open program hardload
+Create files (name up to 255 symbols, file size up to 50GB, types - .jpg .png .bmp .gif .tif .doc .docx .xls .xlsx .pdf .mp3 .wav .midi .aac .zip .rar .7z .gzip txt .mp4 .avi .mkv
+.wmv .flv .mpeg
+Create folders (Paths - Root, local drive, Subsection Directories, USV Flash, FTP, Cloud
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on button &quot;Open file&quot;</content><expected>Opened dialog Window with title &quot;Choose files&quot;</expected></step>
+<step>
+<index>2</index><content>Open source folder &quot;XPath .. &quot; and file</content><expected>Files are in the app list </expected></step>
+<step>
+<index>3</index><content>Click on button &quot;Destination&quot;</content><expected>Opened dialog Window with title &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>4</index><content>Open destination folder &quot;Xpath&quot; and add file</content><expected>Path to destination folder is defined </expected></step>
+<step>
+<index>5</index><content>Select checkbox file and click button &quot;Начать грузить&quot;</content><expected>File are on destination folder</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2839</caseid>
+								<status>Passed</status>
+																<assignedto>malorenovaj@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-08-06T10:49:42Z</createdon>
+																		<createdby>malorenovaj@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Click on button &quot;Open file&quot;</content><expected>Opened dialog Window with title &quot;Choose files&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Open source folder &quot;XPath .. &quot; and file</content><expected>Files are in the app list </expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Click on button &quot;Destination&quot;</content><expected>Opened dialog Window with title &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>Open destination folder &quot;Xpath&quot; and add file</content><expected>Path to destination folder is defined </expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Select checkbox file and click button &quot;Начать грузить&quot;</content><expected>File are on destination folder</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2022-08-06T09:30:13Z</createdon>
+																		<createdby>malorenovaj@gmail.com</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Click on button &quot;Open file&quot;</content><expected>Opened dialog Window with title &quot;Choose files&quot;</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>Open source folder &quot;XPath .. &quot; and file</content><expected>Files are in the app list </expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>Click on button &quot;Destination&quot;</content><expected>Opened dialog Window with title &quot;Обзор папок&quot;</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>Open destination folder &quot;Xpath&quot; and add file</content><expected>Path to destination folder is defined </expected><actual></actual><status>Passed</status></step>
+<step>
+<index>5</index><content>Select checkbox file and click button &quot;Начать грузить&quot;</content><expected>File are on destination folder</expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>No func tests</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shalimova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>No functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Zakiev</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>noFunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shandalova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>nofunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>
