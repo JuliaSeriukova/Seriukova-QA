@@ -226,6 +226,17 @@
 		},
 		{
 			"name": "Change task assignee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -305,6 +316,12 @@
 							"    var jsonData = pm.response.json();",
 							"    ",
 							"    pm.expect(jsonData.customFields[2].value.name).to.eql(pm.collectionVariables.get(\"State_submitted\"));",
+							"});",
+							"",
+							"pm.test(\"Assignee test\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    ",
+							"    pm.expect(jsonData.customFields[3].value.name).to.eql(pm.collectionVariables.get(\"Expected_assignee\"));",
 							"});",
 							""
 						],
@@ -402,6 +419,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Custom fields",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://89.223.126.182:8080/api/issues/{{issue_ID}}/customFields?fields=id,name,value(id,name,value)",
+					"protocol": "http",
+					"host": [
+						"89",
+						"223",
+						"126",
+						"182"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"issues",
+						"{{issue_ID}}",
+						"customFields"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,value(id,name,value)"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -470,6 +518,11 @@
 		},
 		{
 			"key": "State_submitted",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Expected_assignee",
 			"value": "",
 			"type": "string"
 		}
